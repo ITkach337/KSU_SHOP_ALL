@@ -13,21 +13,20 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     'ksu-shop-all.herokuapp.com',
-    'ksu.shop',
 ]
 
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
 LOGGING = {
-    'version':1,
+    'version': 1,
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
             'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
-            'datefmt' : "%d/%b/%Y %H:%M:%S"
+            'datefmt' : "%d/%b/%Y %H:%M:%S",
         },
         'simple' : {
-            'format': '%(levelname)s %(message)s'
+            'format': '%(levelname)s %(message)s',
         },
     },
     'handlers':{
@@ -39,7 +38,7 @@ LOGGING = {
     'loggers': {
         'MYAPP': {
             'handlers': ['console'],
-            'level':'DEBUG'
+            'level':'DEBUG',
         },
     }
 }
